@@ -1,0 +1,14 @@
+.all-elements__title {
+  @include title-small;
+}
+
+.all-elements__desc {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.all-elements__show-all {
+  color: $color-grey;
+  background-color: $bg-grey;
+}

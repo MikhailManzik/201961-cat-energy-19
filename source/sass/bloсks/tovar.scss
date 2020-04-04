@@ -1,0 +1,9 @@
+.tovar__title {
+  @include title-small;
+}
+
+.tovar__desc {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+}

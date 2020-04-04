@@ -1,0 +1,48 @@
+body {
+  @include indent;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.food-programs__top {
+  background-color: $bg-green;
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.title-big {
+  @include title-big;
+}
+
+.food-programs__head {
+  color: #ffffff;
+  line-height: 36px;
+}
+
+.food-programs__slogan {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.advantages__list {
+  @include indent;
+  list-style: none;
+}
+
+.products__list {
+  @include indent;
+  list-style: none;
+}
