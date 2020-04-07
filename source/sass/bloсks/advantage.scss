@@ -8,22 +8,24 @@
 }
 
 .advantage__image--leaf {
-  background-image: url("../../img/advantage-leaf@1x.png");
+  background-image: url("../img/advantage-leaf@1x.png");
 }
 
 .advantage__image--powder {
-  background-image: url("../../img/advantage-powder@1x.png");
+  background-image: url("../img/advantage-powder@1x.png");
 }
 
 .advantage__image--dining {
-  background-image: url("../../img/advantage-dining@1x.png");
+  background-image: url("../img/advantage-dining@1x.png");
 }
 
 .advantage__image--clock {
-  background-image: url("../../img/advantage-clock@1x.png");
+  background-image: url("../img/advantage-clock@1x.png");
 }
 
 .advantage__desc {
-  @include text-small;
+  font-family: $arial;
+  font-size: 14px;
+  line-height: 18px;
   color: $color-black;
 }
