@@ -1,0 +1,13 @@
+.main-nav__list {
+  @include indent;
+}
+
+.main-nav__link {
+  font-family: $oswald;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $color-black;
+}

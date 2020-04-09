@@ -1,0 +1,22 @@
+.form__info {
+  font-family: $oswald;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $color-black;
+}
+
+.form__pet,
+.form__diet,
+.form__owner,
+.form__comment,
+.form__extra {
+  border: none;
+}
+
+.form__required {
+  font-family: $arial;
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-grey;
+}
