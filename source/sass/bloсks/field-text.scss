@@ -1,0 +1,19 @@
+.field-text {
+  font-family: $oswald;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $color-black;
+}
+
+.field-text__label {
+  font-family: $oswald;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $color-black;
+}
+
+.field-text__label::placeholder {
+  color: $color-grey;
+}

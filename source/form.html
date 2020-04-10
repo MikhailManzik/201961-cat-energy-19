@@ -18,13 +18,13 @@
         <button class="main-nav__toggle toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a href="index.html" class="main-nav__link">Главная</a>
+            <a class="main-nav__link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a href="catalog.html" class="main-nav__link">Каталог продукции</a>
+            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="main-nav__item">
-            <a href="#" class="main-nav__link">Подбор программы</a>
+            <a class="main-nav__link" href="#">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -32,30 +32,30 @@
 
     <main>
       <h1 class="title-big">Подбор программы</h1>
-      <p>Заполните анкету и мы подберем программу питания для вашего кота</p>
       <section class="form">
+        <p class="form__info">Заполните анкету и мы подберем программу питания для вашего кота</p>
         <form class="form__selection" action="https://echo.htmlacademy.ru" method="POST">
           <fieldset class="form__pet pet">
             <p class="pet__item">
               <label class="pet__label field-text">Имя:*
-                <input class="pet__input" type="text" name="cat-name" placeholder="Барсик">
+                <input class="pet__input field-text__label" type="text" name="cat-name" placeholder="Барсик">
               </label>
             </p>
             <p class="pet__item">
               <label class="pet__label field-text">Вес (кг):*
-                <input class="pet__input" type="number" name="cat-weight" placeholder="7">
+                <input class="pet__input field-text__label" type="number" name="cat-weight" placeholder="7">
               </label>
             </p>
             <p class="pet__item">
               <label class="pet__label field-text">Возраст (лет):
-                <input class="pet__input" type="number" name="cat-old" placeholder="7">
+                <input class="pet__input field-text__label" type="number" name="cat-old" placeholder="7">
               </label>
             </p>
           </fieldset>
           <fieldset class="form__diet diet">
             <p class="diet__item">
               <label class="diet__desc field-radio">
-                <input class="diet__radio-button" type="radio" name="diet" value="slim" checked>
+                <input class="diet__radio-button field-radio__label" type="radio" name="diet" value="slim" checked>
                 Похудение
               </label>
             </p>
@@ -75,43 +75,43 @@
           <fieldset class="form__owner owner">
             <legend class="owner__head title-small">Контактные данные (владельца кота)</legend>
             <p class="owner__item">
-              <label class="owner__caption">e-mail:*
-                <input class="owner__field" type="email" name="owner-email" placeholder="kuklachev@gmail.com">
+              <label class="owner__caption field-text">e-mail:*
+                <input class="owner__field field-text__label" type="email" name="owner-email" placeholder="kuklachev@gmail.com">
               </label>
             </p>
             <p class="owner__item">
-              <label class="owner__caption">Телефон:*
-                <input class="owner__field" type="number" name="owner-phone" placeholder="8 (960) 900-60-90">
+              <label class="owner__caption field-text">Телефон:*
+                <input class="owner__field field-text__label" type="number" name="owner-phone" placeholder="8 (960) 900-60-90">
               </label>
             </p>
           </fieldset>
           <fieldset class="form__comment comment">
             <legend class="comment__head title-small">Комментарий</legend>
-            <textarea class="comment__field" name="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <textarea class="comment__field field-comment" name="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
           <fieldset class="form__extra extra">
             <legend class="extra__head title-small">Дополнительно</legend>
             <p class="extra__item">
               <label class="extra__desc field-checkbox">
-                <input class="extra__checkbox-button" type="checkbox" name="sweetener" checked>
+                <input class="extra__checkbox-button field-checkbox__label" type="checkbox" name="sweetener" checked>
                 Сахарозаменитель
               </label>
             </p>
             <p class="extra__item">
-                <label class="extra__desc field-checkbox">
-                <input class="extra__checkbox-button" type="checkbox" name="water">
+              <label class="extra__desc field-checkbox">
+                <input class="extra__checkbox-button field-checkbox__label" type="checkbox" name="water">
                 Питьевая вода
               </label>
             </p>
             <p class="extra__item">
               <label class="extra__desc field-checkbox">
-                <input class="extra__checkbox-button" type="checkbox" name="milk">
+                <input class="extra__checkbox-button field-checkbox__label" type="checkbox" name="milk">
                 Молоко
               </label>
             </p>
             <p class="extra__item">
               <label class="extra__desc field-checkbox">
-                <input class="extra__checkbox-button" type="checkbox" name="vitamins">
+                <input class="extra__checkbox-button field-checkbox__label" type="checkbox" name="vitamins">
                 Витамины
               </label>
             </p>
