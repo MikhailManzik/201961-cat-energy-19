@@ -1,11 +1,13 @@
 .main-header {
-  width: 320px;
+  width: 280px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 @media (min-width: $tablet-width) {
   .main-header {
     width: 708px;
+    padding: 0 30px;
     display: flex;
     justify-content: space-between;
   }
@@ -14,5 +16,6 @@
 @media (min-width: $desktop-width) {
   .main-header {
     width: 1220px;
+    padding: 0 110px;
   }
 }
