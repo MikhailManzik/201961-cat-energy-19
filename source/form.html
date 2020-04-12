@@ -9,14 +9,13 @@
   <body>
     <header class="main-header">
       <div class="main-header__logo">
-        <a class="logo" href="/source/index.html">
-          <img class="logo__pic" src="https://via.placeholder.com/150x150" alt="Кэт энерджи.">
-          <img class="logo__text-image" src="https://via.placeholder.com/150x150" alt="Логотип интернет-магазин кэт энерджи.">
+        <a class="logo">
+          <img class="logo__image" src="https://via.placeholder.com/150x150" alt="Кэт энерджи.">
         </a>
       </div>
-
+      <button class="main-header__toggle toggle" type="button">Открыть меню</button>
       <nav class="main-nav">
-        <button class="main-nav__toggle toggle" type="button">Открыть меню</button>
+
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link" href="index.html">Главная</a>
@@ -31,60 +30,64 @@
       </nav>
     </header>
 
-    <main>
+    <main class="page">
       <h1 class="title-big">Подбор программы</h1>
       <section class="form">
         <p class="form__info">Заполните анкету и мы подберем программу питания для вашего кота</p>
         <form class="form__selection" action="https://echo.htmlacademy.ru" method="POST">
-          <fieldset class="form__pet pet">
+          <div class="form__pet-wrap">
+            <fieldset class="form__pet pet">
             <p class="pet__item">
               <label class="pet__label field-text">Имя:*
-                <input class="pet__input field-text__label" type="text" name="cat-name" placeholder="Барсик">
+                <input class="field-text__input" type="text" name="cat-name" placeholder="Барсик">
               </label>
             </p>
             <p class="pet__item">
               <label class="pet__label field-text">Вес (кг):*
-                <input class="pet__input field-text__label" type="number" name="cat-weight" placeholder="7">
+                <input class="field-text__input" type="number" name="cat-weight" placeholder="7">
               </label>
             </p>
             <p class="pet__item">
               <label class="pet__label field-text">Возраст (лет):
-                <input class="pet__input field-text__label" type="number" name="cat-old" placeholder="7">
+                <input class="field-text__input" type="number" name="cat-old" placeholder="7">
               </label>
             </p>
-          </fieldset>
-          <fieldset class="form__diet diet">
+            </fieldset>
+            <fieldset class="form__diet diet">
             <p class="diet__item">
               <label class="diet__desc field-radio">
-                <input class="diet__radio-button field-radio__label" type="radio" name="diet" value="slim" checked>
+                <input class="field-radio__input" type="radio" name="diet" value="slim" checked>
                 Похудение
               </label>
             </p>
             <p class="diet__item">
               <label class="diet__desc field-radio">
-                <input class="diet__radio-button" type="radio" name="diet" value="weight">
+                <input class="field-radio__input" type="radio" name="diet" value="weight">
                 Набо массы
               </label>
             </p>
             <p class="diet__item">
               <label class="diet__desc field-radio">
-                <input class="diet__radio-button" type="radio" name="diet" value="advice">
+                <input class="field-radio__input" type="radio" name="diet" value="advice">
                 Не знаю (нужен ваш совет)
               </label>
             </p>
-          </fieldset>
+            </fieldset>
+          </div>
           <fieldset class="form__owner owner">
             <legend class="owner__head title-small">Контактные данные (владельца кота)</legend>
-            <p class="owner__item">
+            <div class="owner__list">
+              <p class="owner__item">
               <label class="owner__caption field-text">e-mail:*
-                <input class="owner__field field-text__label" type="email" name="owner-email" placeholder="kuklachev@gmail.com">
+                <input class="field-text__input" type="email" name="owner-email" placeholder="kuklachev@gmail.com">
               </label>
-            </p>
-            <p class="owner__item">
+              </p>
+              <p class="owner__item">
               <label class="owner__caption field-text">Телефон:*
-                <input class="owner__field field-text__label" type="number" name="owner-phone" placeholder="8 (960) 900-60-90">
+                <input class="field-text__input" type="number" name="owner-phone" placeholder="8 (960) 900-60-90">
               </label>
-            </p>
+              </p>
+            </div>
           </fieldset>
           <fieldset class="form__comment comment">
             <legend class="comment__head title-small">Комментарий</legend>
@@ -92,30 +95,32 @@
           </fieldset>
           <fieldset class="form__extra extra">
             <legend class="extra__head title-small">Дополнительно</legend>
-            <p class="extra__item">
+            <div class="extra__list">
+              <p class="extra__item">
               <label class="extra__desc field-checkbox">
-                <input class="extra__checkbox-button field-checkbox__label" type="checkbox" name="sweetener" checked>
+                <input class="field-checkbox__input" type="checkbox" name="sweetener" checked>
                 Сахарозаменитель
               </label>
-            </p>
-            <p class="extra__item">
+              </p>
+              <p class="extra__item">
               <label class="extra__desc field-checkbox">
-                <input class="extra__checkbox-button field-checkbox__label" type="checkbox" name="water">
+                <input class="field-checkbox__input" type="checkbox" name="water">
                 Питьевая вода
               </label>
-            </p>
-            <p class="extra__item">
+              </p>
+              <p class="extra__item">
               <label class="extra__desc field-checkbox">
-                <input class="extra__checkbox-button field-checkbox__label" type="checkbox" name="milk">
+                <input class="field-checkbox__input" type="checkbox" name="milk">
                 Молоко
               </label>
-            </p>
-            <p class="extra__item">
+              </p>
+              <p class="extra__item">
               <label class="extra__desc field-checkbox">
-                <input class="extra__checkbox-button field-checkbox__label" type="checkbox" name="vitamins">
+                <input class="field-checkbox__input" type="checkbox" name="vitamins">
                 Витамины
               </label>
-            </p>
+              </p>
+            </div>
           </fieldset>
           <button class="form__submit button" type="submit">Отправить заявку</button>
           <p class="form__required">* - Обязательные поля</p>
@@ -124,35 +129,39 @@
     </main>
 
     <footer class="main-footer">
-      <div class="main-footer__contacts contacts">
+      <div class="main-footer__contacts">
         <div class="contacts">
           <p class="contacts__info">Приглашаем к сотрудничеству дилеров!</p>
           <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="766" height="560" allowfullscreen></iframe>
-          <p><img src="img/map.jpg" width="766" height="560" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></p>
         </div>
+        <p class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="320" height="auto" allowfullscreen></iframe>
+          <p><img src="img/map.jpg" width="766" height="560" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></p>
+        </p>
       </div>
-      <div class="main-footer__logo">
-        <a class="logo" href="/source/index.html">
-          <img class="logo__text-image" src="https://via.placeholder.com/150x150" alt="Кэт энерджи.">
-        </a>
-      </div>
-      <div class="main-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="#">Мы в вконтакте</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="#">Мы в Инстаграме</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="#">Мы в фейсбуке</a>
-          </li>
-        </ul>
-      </div>
-      <div class="main-footer__copyright copyright">
-        <p class="copyright__name-company">HTML Academy</p>
-        <img class="copyright__logo-company" src="https://via.placeholder.com/150x150" alt="Логотип HTML Academy">
+      <div class="main-footer__bottom">
+        <div class="main-footer__logo">
+          <a class="logo"">
+            <img class="logo__text-image" src="https://via.placeholder.com/150x150" alt="Кэт энерджи.">
+          </a>
+        </div>
+        <div class="main-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="#">Мы в вконтакте</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="#">Мы в Инстаграме</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#">Мы в фейсбуке</a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-footer__copyright copyright">
+          <p class="copyright__name-company">HTML Academy</p>
+          <img class="copyright__logo-company" src="https://via.placeholder.com/150x150" alt="Логотип HTML Academy">
+        </div>
       </div>
     </footer>
   </body>
