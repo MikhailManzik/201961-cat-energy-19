@@ -24,14 +24,9 @@
   }
 
   .examples__cash {
-    margin-left: auto;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .examples__cash {
     font-size: 20px;
     line-height: 20px;
+    margin-left: auto;
   }
 }
 
