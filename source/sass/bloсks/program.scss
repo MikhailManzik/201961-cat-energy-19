@@ -26,3 +26,19 @@
   text-transform: uppercase;
   text-decoration: none;
 }
+
+@media (min-width: $tablet-width) {
+  .program__desc {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .program__head {
+    font-size: 36px;
+  }
+
+  .program__catalog {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}

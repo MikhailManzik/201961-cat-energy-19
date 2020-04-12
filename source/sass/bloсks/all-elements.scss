@@ -16,3 +16,14 @@
   color: $color-grey;
   background-color: $bg-grey;
 }
+
+@media (min-width: $tablet-width) {
+  .all-elements__title {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .all-elements__desc {
+    font-size: 16px;
+  }
+}

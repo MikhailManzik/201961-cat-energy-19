@@ -2,3 +2,10 @@
   @include indent;
   list-style: none;
 }
+
+@media (min-width: $desktop-width) {
+  .dop-products__wrap {
+    display: flex;
+  }
+}
+

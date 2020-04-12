@@ -17,3 +17,32 @@
   text-transform: uppercase;
   color: #ffffff;
 }
+
+@media (min-width: $tablet-width) {
+  .food-programs {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .food-programs__head {
+    color: $color-black;
+    line-height: 36px;
+  }
+
+  .food-programs__slogan {
+    font-size: 20px;
+    line-height: 20px;
+    color: $color-black;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .food-programs__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .food-programs__item {
+    width: 570px;
+  }
+}

@@ -1,5 +1,12 @@
 .main-nav__list {
   @include indent;
+  list-style: none;
+}
+
+.main-nav__item {
+  padding: 22px 0;
+  text-align: center;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .main-nav__link {
@@ -10,4 +17,26 @@
   text-transform: uppercase;
   text-decoration: none;
   color: $color-black;
+}
+
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    width: 438px;
+  }
+
+  .main-nav__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-nav__item {
+    border-bottom: none;
+  }
+
+  .main-nav__link {
+    font-family: $oswald;
+    font-size: 18px;
+    line-height: 24.86px;
+  }
 }
