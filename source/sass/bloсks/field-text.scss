@@ -6,7 +6,7 @@
   color: $color-black;
 }
 
-.field-text__label {
+.field-text__input {
   font-family: $oswald;
   font-size: 16px;
   line-height: 18px;
@@ -14,6 +14,6 @@
   color: $color-black;
 }
 
-.field-text__label::placeholder {
+.field-text__input::placeholder {
   color: $color-grey;
 }

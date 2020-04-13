@@ -1,7 +1,16 @@
+.tovar__wrap {
+  display: flex;
+}
+
+.tovar__info {
+  width: 140px;
+}
+
 .tovar__title {
   font-family: $arial;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
 }
 
 .tovar__desc {
@@ -9,3 +18,20 @@
   font-size: 12px;
   line-height: 16px;
 }
+
+@media (min-width: $tablet-width) {
+  .tovar__wrap {
+    display: block;
+  }
+
+  .tovar__title {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .tovar__desc {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+

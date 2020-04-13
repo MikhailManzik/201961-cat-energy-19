@@ -1,7 +1,9 @@
 @import "fonts.scss";
 @import "mixins.scss";
 @import "variables.scss";
-@import "bloсks/fullpage.scss";
+@import "bloсks/global.scss";
+@import "bloсks/container.scss";
+@import "bloсks/main-header.scss";
 @import "bloсks/main-nav.scss";
 @import "bloсks/title-big.scss";
 @import "bloсks/food-programs.scss";
@@ -20,11 +22,14 @@
 @import "bloсks/dop-products.scss";
 @import "bloсks/dop-tovar.scss";
 @import "bloсks/bonus.scss";
+@import "bloсks/owner.scss";
+@import "bloсks/extra.scss";
 @import "bloсks/field-text.scss";
 @import "bloсks/field-radio.scss";
 @import "bloсks/field-checkbox.scss";
 @import "bloсks/field-comment.scss";
 @import "bloсks/form.scss";
+@import "bloсks/main-footer.scss";
 @import "bloсks/social.scss";
 @import "bloсks/copyright.scss";
 

@@ -13,3 +13,20 @@
   line-height: 14px;
   color: $color-grey;
 }
+
+@media (min-width: $tablet-width) {
+  .dop-tovar__wrap {
+    display: flex;
+  }
+
+  .dop-tovar__head {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .dop-tovar__desc {
+    margin-left: auto;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}

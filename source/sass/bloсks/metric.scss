@@ -12,3 +12,16 @@
   line-height: 12px;
   color: $color-grey;
 }
+
+@media (min-width: $tablet-width) {
+  .metric__value {
+    font-size: 30px;
+    line-height: 37.02px;
+  }
+
+  .metric__desc {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+}

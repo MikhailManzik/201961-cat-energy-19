@@ -1,0 +1,27 @@
+.main-footer {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.main-footer__bottom {
+  background-color: $bg-grey;
+}
+
+@media (min-width: $tablet-width) {
+  .main-footer {
+    width: 708px;
+    padding: 0 30px;
+  }
+
+  .main-footer__bottom {
+    display: flex;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-footer {
+    width: 1220px;
+    padding: 0 110px;
+  }
+}
