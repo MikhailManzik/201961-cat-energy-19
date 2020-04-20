@@ -1,6 +1,6 @@
 .map {
   position: relative;
-  min-height: 365px;
+  height: 362px;
 }
 
 .map__road {
@@ -8,4 +8,16 @@
   width: 100%;
   height: 100%;
   border: none;
+}
+
+.map__images {
+  position: absolute;
+  z-index: -1;
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .map {
+    height: 400px;
+  }
 }
