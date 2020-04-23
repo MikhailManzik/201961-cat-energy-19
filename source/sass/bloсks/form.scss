@@ -1,4 +1,11 @@
+.form__selection {
+  padding-bottom: 11px;
+}
+
 .form__info {
+  margin-top: 24px;
+  margin-bottom: 40px;
+  padding-right: 10px;
   font-family: $oswald;
   font-size: 14px;
   line-height: 18px;
@@ -6,28 +13,142 @@
   color: $color-black;
 }
 
-@media (min-width: $desktop-width) {
-  .form__pet-wrap {
-    display: flex;
-  }
-
-  .form__pet,
-  .form__diet {
-    width: 570px;
-  }
-}
-
 .form__pet,
 .form__diet,
 .form__owner,
 .form__comment,
 .form__extra {
+  @include indent;
   border: none;
 }
 
+.form__pet {
+  padding-bottom: 11px;
+}
+
+.form__diet {
+  margin: 0 -20px;
+  padding: 0 19px;
+  padding-top: 26px;
+  padding-bottom: 4px;
+  border: 1px solid #ededed;
+}
+
+.form__owner {
+  margin-bottom: -14px;
+}
+
+.form__extra {
+  padding-bottom: 17px;
+}
+
 .form__required {
+  margin: 21px 0;
   font-family: $arial;
   font-size: 14px;
   line-height: 16px;
   color: $color-grey;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    padding: 0 40px;
+    margin-bottom: 61px;
+  }
+
+  .form__info {
+    margin-bottom: 66px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form__pet {
+    margin-bottom: 40px;
+  }
+
+  .form__diet {
+    margin: 0;
+    margin-bottom: 40px;
+    padding: 0 28px;
+    padding-top: 32px;
+  }
+
+  .form__owner {
+    margin-bottom: 9px;
+  }
+
+  .form__extra {
+    padding-bottom: 13px;
+  }
+
+  .form__comment {
+    margin-bottom: 25px;
+  }
+
+  .form__send {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form__submit {
+    width: calc(50% - 30px);
+    padding: 16px;
+  }
+
+  .form__required {
+    align-self: center;
+    width: calc(50% - 30px);
+    margin: 0;
+    font-size: 16px;
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    padding: 0;
+    margin-bottom: 72px;
+  }
+
+  .form__pet-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form__pet,
+  .form__diet {
+    width: calc(50% - 40px);
+  }
+
+  .form__pet {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .form__diet {
+    margin-left: 10px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .form__owner {
+    margin-bottom: 18px;
+  }
+
+  .form__comment {
+    margin-bottom: 34px;
+  }
+
+  .form__extra {
+    padding-bottom: 20px;
+  }
+
+  .form__submit {
+    width: calc(50% - 40px);
+  }
+
+  .form__required {
+    width: calc(50% - 40px);
+  }
 }

@@ -1,7 +1,7 @@
 .main-header__top {
   display: flex;
   justify-content: space-between;
-  padding: 11px 0;
+  padding: 11px 20px;
   align-items: center;
   border-bottom: 1px solid #e6e6e6;
 }
@@ -11,17 +11,21 @@
     display: flex;
     justify-content: space-between;
     padding-top: 24px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .main-header__top {
     padding: 0;
-    margin-right: 93px;
+    margin: 0;
+    margin-right: 77px;
     border-bottom: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-header {
+    padding: 0 110px;
     padding-top: 54px;
   }
 }

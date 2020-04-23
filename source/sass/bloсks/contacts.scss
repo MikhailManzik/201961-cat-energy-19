@@ -1,8 +1,9 @@
 .contacts {
   display: flex;
   justify-content: space-between;
-  padding-top: 7px;
+  padding-top: 28px;
   padding-bottom: 26px;
+  background-color: #f2f2f2;
 }
 
 .contacts__info {
@@ -26,9 +27,9 @@
   .contacts {
     display: flex;
     justify-content: space-between;
-    margin-left: 42px;
-    margin-right: 42px;
+    padding: 0 71px;
     padding-bottom: 58px;
+    padding-top: 65px;
   }
 
   .contacts__info {

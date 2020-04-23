@@ -1,7 +1,68 @@
 .field-checkbox {
+  position: relative;
   font-family: $oswald;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: $color-black;
+}
+
+.field-checkbox__text {
+  padding-left: 46px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 28px;
+    height: 28px;
+    border: 1px solid #cdcdcd;
+  }
+}
+
+.field-checkbox__icon {
+  position: absolute;
+  top: 8px;
+  left: 5px;
+  fill: $bg-green;
+  opacity: 0;
+}
+
+.field-checkbox__input:hover + .field-checkbox__text::before {
+  border: 1px solid #bababa;
+}
+
+.field-checkbox__input:active + .field-checkbox__text {
+  opacity: 0.3;
+}
+
+.field-checkbox__input:focus + .field-checkbox__text::before {
+  outline: 0;
+  box-shadow: 0 0 0 2px rgb(59, 153, 252);
+}
+
+.field-checkbox__input:checked + .field-checkbox__text svg {
+  opacity: 1;
+}
+
+@media (min-width: $tablet-width) {
+  .field-checkbox {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .field-checkbox__text {
+    padding-left: 58px;
+
+    &::before {
+      top: -4px;
+      width: 38px;
+      height: 38px;
+    }
+  }
+
+  .field-checkbox__icon {
+    left: 10px;
+  }
 }

@@ -1,3 +1,9 @@
 .pet__item {
   margin-bottom: 14px;
 }
+
+@media (min-width: $tablet-width) {
+  .pet__item {
+    margin-bottom: 20px;
+  }
+}
