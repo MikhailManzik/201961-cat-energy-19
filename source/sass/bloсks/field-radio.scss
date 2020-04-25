@@ -41,7 +41,7 @@
 
 .field-radio__input:focus + .field-radio__text::before {
   outline: 0;
-  box-shadow: 0 0 0 2px rgb(59, 153, 252);
+  box-shadow: 0 0 0 2px $outline;
   border-radius: 50%;
 }
 
