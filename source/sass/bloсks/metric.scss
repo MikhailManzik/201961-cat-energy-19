@@ -1,4 +1,24 @@
+.metric {
+  position: relative;
+  width: 45%;
+  min-height: 54px;
+  border: 1px solid #cdcdcd;
+  border-radius: 5px;
+}
+
+.metric__wrapper {
+  position: absolute;
+  top: 12px;
+  left: 0;
+  right: 0;
+  width: 84px;
+  margin: auto;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
 .metric__value {
+  margin: 0;
   font-family: $oswald;
   font-size: 24px;
   line-height: 24px;
@@ -14,6 +34,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .metric__wrapper {
+    width: 127px;
+  }
+
   .metric__value {
     font-size: 30px;
     line-height: 37.02px;
@@ -23,5 +47,4 @@
     font-size: 14px;
     line-height: 14px;
   }
-
 }

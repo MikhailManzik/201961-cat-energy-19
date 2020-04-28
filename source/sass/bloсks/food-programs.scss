@@ -1,8 +1,13 @@
 .food-programs__top {
-  background-color: $bg-green;
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 408px;
+  margin-bottom: 22px;
+  text-align: center;
+}
+
+.food-programs__item {
+  margin-bottom: 20px;
 }
 
 .food-programs__head {
@@ -18,21 +23,50 @@
   color: #ffffff;
 }
 
+.food-programs__selection {
+  width: auto;
+  margin-top: auto;
+}
+
 @media (min-width: $tablet-width) {
   .food-programs {
+    position: relative;
     display: flex;
     flex-direction: column;
+    margin-bottom: 37px;
+  }
+
+  .food-programs__top {
+    min-height: 900px;
+    padding: 0 90px;
+    text-align: left;
   }
 
   .food-programs__head {
     color: $color-black;
-    line-height: 36px;
+    line-height: 60px;
   }
 
   .food-programs__slogan {
+    margin-bottom: 46px;
     font-size: 20px;
     line-height: 20px;
     color: $color-black;
+  }
+
+  .food-programs__image {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 690px;
+    width: auto;
+    margin: 0 auto;
+  }
+
+  .food-programs__selection {
+    z-index: 1;
+    align-self: flex-start;
+    margin-top: 0;
   }
 }
 
