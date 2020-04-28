@@ -1,6 +1,17 @@
 .bonus {
-  background-image: url("../img/gift-photo-mobile@1x.jpg");
-  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.bonus__content {
+  position: absolute;
+  text-align: center;
+}
+
+.bonus__icon {
+  fill: #ffffff;
+  margin: 65px 0;
 }
 
 .bonus__text {
@@ -9,3 +20,48 @@
   line-height: 20px;
   color: #ffffff;
 }
+
+.bonus__bg {
+  width: 100%;
+}
+
+.bouns__image {
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .bonus {
+    align-items: center;
+  }
+
+  .bonus__content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  .bonus__icon {
+    fill: #ffffff;
+    margin: 0;
+  }
+
+  .bonus__text {
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .bonus__content {
+    display: block;
+  }
+
+  .bonus__icon {
+    margin-bottom: 65px;
+  }
+
+  .bonus__text {
+    text-align: center;
+  }
+}
+
