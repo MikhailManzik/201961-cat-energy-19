@@ -1,4 +1,5 @@
 .title-big {
+  margin: 16px 0;
   font-family: $oswald;
   font-size: 32px;
   line-height: 60px;
@@ -7,6 +8,14 @@
 
 @media (min-width: $tablet-width) {
   .title-big {
+    margin: 55px 0;
     font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .title-big {
+    margin-top: 70px;
   }
 }

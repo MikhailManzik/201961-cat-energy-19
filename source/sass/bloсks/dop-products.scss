@@ -1,11 +1,44 @@
 .dop-products__list {
   @include indent;
+  margin-bottom: 40px;
+  border-top: 1px solid #ededed;
   list-style: none;
+}
+
+.dop-products__item {
+  position: relative;
+  padding-top: 15px;
+  padding-bottom: 17px;
+  border-bottom: 1px solid #ededed;
+}
+
+@media (min-width: $tablet-width) {
+  .dop-products__list {
+    border: 1px solid #ededed;
+  }
+
+  .dop-products__item {
+    padding-left: 37px;
+    padding-right: 37px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .dop-products__wrap {
     display: flex;
+    align-items: flex-start;
+  }
+
+  .dop-products__list {
+    width: 60%;
+    flex-grow: 1;
+    margin-right: 80px;
+    border: 0;
+    border-top: 1px solid #ededed;
+  }
+
+  .dop-products__item {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
-

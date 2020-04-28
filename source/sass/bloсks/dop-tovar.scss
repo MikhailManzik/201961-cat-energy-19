@@ -1,4 +1,5 @@
 .dop-tovar__head {
+  margin: 0;
   font-family: $oswald;
   font-size: 16px;
   line-height: 16px;
@@ -8,15 +9,28 @@
 }
 
 .dop-tovar__desc {
+  display: flex;
+  justify-content: space-between;
   font-family: $arial;
   font-size: 14px;
   line-height: 14px;
   color: $color-grey;
 }
 
+.dop-tovar__value {
+  margin: 0;
+}
+
+.dop-tovar__order {
+  width: auto;
+  display: block;
+  text-align: center;
+}
+
 @media (min-width: $tablet-width) {
   .dop-tovar__wrap {
     display: flex;
+    align-items: center;
   }
 
   .dop-tovar__head {
@@ -28,5 +42,34 @@
     margin-left: auto;
     font-size: 16px;
     line-height: 20px;
+  }
+
+  .dop-tovar__value {
+    margin-left: 52px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .dop-tovar {
+    display: flex;
+  }
+
+  .dop-tovar__wrap {
+    width: 70%;
+  }
+
+  .dop-tovar__head {
+    width: 50%;
+  }
+
+  .dop-tovar__desc {
+    width: 50%;
+    margin: 0;
+  }
+
+  .dop-tovar__order {
+    width: 25%;
+    margin-left: 50px;
+    flex-shrink: 0;
   }
 }

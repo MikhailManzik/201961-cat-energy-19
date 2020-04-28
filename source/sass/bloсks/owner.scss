@@ -1,6 +1,26 @@
 
+.owner__item {
+  margin-bottom: 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .owner__head {
+    margin-bottom: 40px;
+  }
+
+  .owner__item {
+    margin-bottom: 20px;
+  }
+}
+
+
 @media (min-width: $desktop-width) {
   .owner__list {
     display: flex;
+    justify-content: space-between;
+  }
+
+  .owner__item {
+    width: calc(50% - 40px);
   }
 }

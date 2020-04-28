@@ -1,3 +1,12 @@
+.all-elements {
+  padding-top: 26px;
+  text-align: center;
+}
+
+.all-elements__icon-plus {
+  fill: #d3d3d3;
+}
+
 .all-elements__title {
   font-family: $oswald;
   font-size: 16px;
@@ -13,17 +22,63 @@
 }
 
 .all-elements__show-all {
+  display: block;
+  width: auto;
   color: $color-grey;
   background-color: $bg-grey;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    color: $color-black-active;
+  }
 }
 
 @media (min-width: $tablet-width) {
+  .all-elements {
+    padding: 0 38px;
+    padding-top: 54px;
+  }
+
   .all-elements__title {
+    margin: 0 50px;
+    margin-bottom: 30px;
     font-size: 20px;
     line-height: 20px;
   }
 
   .all-elements__desc {
+    margin: 0 50px;
+    margin-bottom: 50px;
     font-size: 16px;
+  }
+
+  .all-elements__icon {
+    margin-bottom: 52px;
+  }
+
+  .all-elements__icon-plus {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .all-elements {
+    padding: 0 38px;
+    padding-top: 54px;
+  }
+
+  .all-elements__title {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .all-elements__desc {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 66px;
   }
 }

@@ -1,8 +1,12 @@
 .contacts {
   display: flex;
+  justify-content: space-between;
+  padding-top: 28px;
+  padding-bottom: 26px;
 }
 
 .contacts__info {
+  margin: 0;
   font-family: $oswald;
   font-size: 16px;
   line-height: 20px;
@@ -11,6 +15,7 @@
 }
 
 .contacts__address {
+  margin: 0;
   font-family: $arial;
   font-size: 14px;
   line-height: 20px;
@@ -20,6 +25,10 @@
 @media (min-width: $tablet-width) {
   .contacts {
     display: flex;
+    justify-content: space-between;
+    padding: 0 71px;
+    padding-bottom: 58px;
+    padding-top: 65px;
   }
 
   .contacts__info {
@@ -30,5 +39,31 @@
   .contacts__address {
     font-size: 16px;
     line-height: 20px;
+    text-align: right;
+  }
+
+  .contacts__sity {
+    display: block;
+    margin-top: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    z-index: 1;
+    margin: 0;
+    padding-top: 64px;
+    padding-bottom: 60px;
+    padding-left: 77px;
+    padding-right: 77px;
+    background-color: $color-white;
+  }
+
+  .contacts__address {
+    text-align: left;
+    margin-left: 95px;
   }
 }

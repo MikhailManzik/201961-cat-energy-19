@@ -2,21 +2,36 @@
   display: flex;
 }
 
+.tovar__photo {
+  width: 50%;
+}
+
 .tovar__info {
-  width: 140px;
+  width: 50%;
 }
 
 .tovar__title {
-  font-family: $arial;
+  width: 60%;
+  margin-top: 22px;
+  margin-bottom: 12px;
+  font-family: $oswald;
   font-size: 16px;
   line-height: 20px;
+  font-weight: 400;
   text-transform: uppercase;
 }
 
 .tovar__desc {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
   font-family: $arial;
   font-size: 12px;
   line-height: 16px;
+}
+
+.tovar__value {
+  margin: 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -24,14 +39,45 @@
     display: block;
   }
 
+  .tovar__photo {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    min-height: 212px;
+    margin-top: -80px;
+  }
+
+  .tovar__image {
+    width: 100%;
+  }
+
+  .tovar__info {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    padding: 0 38px;
+    padding-bottom: 38px;
+  }
+
   .tovar__title {
+    align-self: center;
     font-size: 20px;
     line-height: 20px;
+    text-align: center;
   }
 
   .tovar__desc {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
     font-size: 16px;
     line-height: 16px;
+    border-bottom: 1px solid #cdcdcd;
   }
 }
 
+@media (min-width: $desktop-width) {
+  .tovar__title {
+    width: 90%;
+  }
+}
