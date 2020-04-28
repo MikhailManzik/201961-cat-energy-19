@@ -84,20 +84,5 @@
 @media (min-width: $desktop-width) {
   .main-nav__link {
     font-size: 20px;
-    color: $color-white;
-
-    &:hover {
-      color: $color-white-hover;
-    }
-
-    &:active {
-      color: $color-white-active;
-    }
-  }
-
-  .main-nav__link--active {
-    &::before {
-      background-color: $color-white;
-    }
   }
 }
