@@ -26,7 +26,6 @@
   .contacts {
     display: flex;
     justify-content: space-between;
-    padding: 0 71px;
     padding-bottom: 58px;
     padding-top: 65px;
   }
@@ -54,6 +53,7 @@
     top: 95px;
     left: 110px;
     z-index: 1;
+    width: auto;
     margin: 0;
     padding-top: 64px;
     padding-bottom: 60px;

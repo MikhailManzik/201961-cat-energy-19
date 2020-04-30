@@ -15,11 +15,12 @@
 
 @media (min-width: $tablet-width) {
   .main-footer__bottom {
+    padding: 55px 0;
+  }
+
+  .main-footer__wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding-top: 55px;
-    padding-bottom: 55px;
   }
 
   .main-footer__logo {
