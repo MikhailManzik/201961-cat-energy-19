@@ -23,10 +23,10 @@
         <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--active" href="index.html">Главная</a>
+            <a class="main-nav__link " href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link">Каталог продукции</a>
+            <a class="main-nav__link main-nav__link--active">Каталог продукции</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="form.html">Подбор программы</a>
@@ -36,9 +36,10 @@
       </div>
     </header>
 
-    <main class="container">
-      <h1 class="title-big">Каталог продукции</h1>
-      <section class="products">
+    <main class="hidden">
+      <div class="container">
+        <h1 class="title-big">Каталог продукции</h1>
+        <section class="products">
         <h2 class="visually-hidden">Список товаров</h2>
         <div class="products__wrapper">
           <ul class="products__list">
@@ -47,9 +48,9 @@
               <div class="tovar__wrap">
                 <div class="tovar__photo">
                   <picture>
-                    <source media="(min-width:1440px)" srcset="img/chicken-small-desktop@1x.png">
-                    <source media="(min-width:768px)" srcset="img/chicken-small-tablet@1x.png">
-                    <img class="tovar__image" src="img/chicken-small-mobile@1x.jpg" width="161" height="172" alt="Cat Energy Pro 500 г.">
+                    <source media="(min-width:1440px)" srcset="img/chicken-small-desktop@1x.png 1x, img/chicken-small-desktop@2x.png 2x">
+                    <source media="(min-width:768px)" srcset="img/chicken-small-tablet@1x.png 1x, img/chicken-small-tablet@2x.png 2x">
+                    <img class="tovar__image" src="img/chicken-small-mobile@1x.jpg" srcset="img/chicken-small-mobile@2x.jpg 2x" width="161" height="172" alt="Cat Energy Pro 500 г.">
                   </picture>
                 </div>
                 <div class="tovar__info">
@@ -76,9 +77,9 @@
               <div class="tovar__wrap">
                 <div class="tovar__photo">
                   <picture>
-                  <source media="(min-width:1440px)" srcset="img/chicken-big-desktop@1x.png">
-                  <source media="(min-width:768px)" srcset="img/chicken-big-tablet@1x.png">
-                  <img class="tovar__image" src="img/chicken-big-mobile@1x.jpg" width="195" height="208" alt="Cat Energy Pro 1000 г.">
+                  <source media="(min-width:1440px)" srcset="img/chicken-big-desktop@1x.png 1x, img/chicken-big-desktop@2x.png 2x">
+                  <source media="(min-width:768px)" srcset="img/chicken-big-tablet@1x.png 1x, img/chicken-big-tablet@2x.png 2x">
+                  <img class="tovar__image" src="img/chicken-big-mobile@1x.jpg" srcset="img/chicken-big-mobile@2x.jpg 2x" width="195" height="208" alt="Cat Energy Pro 1000 г.">
                   </picture>
                 </div>
                 <div class="tovar__info">
@@ -105,9 +106,9 @@
               <div class="tovar__wrap">
                 <div class="tovar__photo">
                   <picture>
-                  <source media="(min-width:1440px)" srcset="img/fish-small-desktop@1x.png">
-                  <source media="(min-width:768px)" srcset="img/fish-small-tablet@1x.png">
-                  <img class="tovar__image" src="img/fish-small-mobile@1x.jpg" width="161" height="172" alt="Cat Energy Pro 500 г.">
+                  <source media="(min-width:1440px)" srcset="img/fish-small-desktop@1x.png 1x, img/fish-small-desktop@2x.png 2x">
+                  <source media="(min-width:768px)" srcset="img/fish-small-tablet@1x.png 1x, img/fish-small-tablet@2x.png 2x">
+                  <img class="tovar__image" src="img/fish-small-mobile@1x.jpg" srcset="img/fish-small-mobile@2x.jpg 2x" width="161" height="172" alt="Cat Energy Pro 500 г.">
                   </picture>
                 </div>
               <div class="tovar__info">
@@ -134,9 +135,9 @@
               <div class="tovar__wrap">
                 <div class="tovar__photo">
                   <picture>
-                  <source media="(min-width:1440px)" srcset="img/fish-big-desktop@1x.png">
-                  <source media="(min-width:768px)" srcset="img/fish-big-tablet@1x.png">
-                  <img class="tovar__image" src="img/fish-big-mobile@1x.jpg" width="195" height="208" alt="Cat Energy Pro 1000 г.">
+                  <source media="(min-width:1440px)" srcset="img/fish-big-desktop@1x.png 1x, img/fish-big-desktop@2x.png 2x">
+                  <source media="(min-width:768px)" srcset="img/fish-big-tablet@1x.png 1x, img/fish-big-tablet@2x.png 2x">
+                  <img class="tovar__image" src="img/fish-big-mobile@1x.jpg" srcset="img/fish-big-mobile@2x.jpg 2x" width="195" height="208" alt="Cat Energy Pro 1000 г.">
                   </picture>
                 </div>
                 <div class="tovar__info">
@@ -163,9 +164,9 @@
               <div class="tovar__wrap">
                 <div class="tovar__photo">
                   <picture>
-                  <source media="(min-width:1440px)" srcset="img/buckwheat-small-desktop@1x.png">
-                  <source media="(min-width:768px)" srcset="img/buckwheat-small-tablet@1x.png">
-                  <img class="tovar__image" src="img/buckwheat-small-mobile@1x.jpg" width="161" height="172" alt="Cat Energy Slim 500 г.">
+                  <source media="(min-width:1440px)" srcset="img/buckwheat-small-desktop@1x.png 1x, img/buckwheat-small-desktop@2x.png 2x">
+                  <source media="(min-width:768px)" srcset="img/buckwheat-small-tablet@1x.png 1x, img/buckwheat-small-tablet@2x.png 2x">
+                  <img class="tovar__image" src="img/buckwheat-small-mobile@1x.jpg" srcset="img/buckwheat-small-mobile@2x.jpg 2x" width="161" height="172" alt="Cat Energy Slim 500 г.">
                   </picture>
                 </div>
                 <div class="tovar__info">
@@ -192,9 +193,9 @@
               <div class="tovar__wrap">
                 <div class="tovar__photo">
                   <picture>
-                  <source media="(min-width:1440px)" srcset="img/buckwheat-big-desktop@1x.png">
-                  <source media="(min-width:768px)" srcset="img/buckwheat-big-tablet@1x.png">
-                  <img class="tovar__image" src="img/buckwheat-big-mobile@1x.jpg" width="195" height="208" alt="Cat Energy Slim 1000 г.">
+                  <source media="(min-width:1440px)" srcset="img/buckwheat-big-desktop@1x.png 1x, img/buckwheat-big-desktop@2x.png 2x">
+                  <source media="(min-width:768px)" srcset="img/buckwheat-big-tablet@1x.png 1x, img/buckwheat-big-tablet@2x.png 2x">
+                  <img class="tovar__image" src="img/buckwheat-big-mobile@1x.jpg" srcset="img/buckwheat-big-mobile@2x.jpg 2x" width="195" height="208" alt="Cat Energy Slim 1000 г.">
                   </picture>
                 </div>
                 <div class="tovar__info">
@@ -221,9 +222,9 @@
               <div class="tovar__wrap">
                 <div class="tovar__photo">
                   <picture>
-                  <source media="(min-width:1440px)" srcset="img/rice-small-desktop@1x.png">
-                  <source media="(min-width:768px)" srcset="img/rice-small-tablet@1x.png">
-                  <img class="tovar__image" src="img/rice-small-mobile@1x.jpg" width="161" height="172" alt="Cat Energy Slim 500 г.">
+                  <source media="(min-width:1440px)" srcset="img/rice-small-desktop@1x.png, img/rice-small-desktop@2x.png 2x">
+                  <source media="(min-width:768px)" srcset="img/rice-small-tablet@1x.png, img/rice-small-tablet@2x.png 2x">
+                  <img class="tovar__image" src="img/rice-small-mobile@1x.jpg" srcset="img/rice-small-mobile@2x.jpg 2x" width="161" height="172" alt="Cat Energy Slim 500 г.">
                   </picture>
                 </div>
                 <div class="tovar__info">
@@ -259,8 +260,8 @@
           </li>
           </ul>
         </div>
-      </section>
-      <section class="dop-products container">
+        </section>
+        <section class="dop-products">
         <h2 class="dop-products__caption title-small">Дополнительные товары</h2>
         <div class="dop-products__wrap">
           <ul class="dop-products__list">
@@ -331,16 +332,10 @@
               </div>
               <p class="bonus__text">Закажите все<br> и получите чехол для<br> кота в подарок</p>
             </div>
-            <div class="bonus__bg">
-              <picture>
-              <source media="(min-width:1440px)" srcset="img/gift-photo-desktop@1x.jpg">
-              <source media="(min-width:768px)" srcset="img/gift-photo-tablet@1x.jpg">
-              <img class="bouns__image" src="img/gift-photo-mobile@1x.jpg" width="280" height="289" alt="">
-              </picture>
-            </div>
           </div>
         </div>
-      </section>
+        </section>
+      </div>
     </main>
 
     <footer class="main-footer">
@@ -427,5 +422,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="js/picturefill.js"></script>
   </body>
 </html>
