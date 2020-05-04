@@ -117,6 +117,16 @@
 
   .main-nav__link--white {
     color: $color-white;
+
+    &:hover {
+      color: $color-white;
+      opacity: 0.6;
+    }
+
+    &:active {
+      color: $color-white;
+      opacity: 0.3;
+    }
   }
 
   .main-nav__link--index-active {
