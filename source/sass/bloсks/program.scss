@@ -1,12 +1,13 @@
 .program {
   position: relative;
-  padding: 21px;
+  padding: 20px;
   background-color: $bg-grey;
 }
 
 .program__logo {
   position: absolute;
-  left: 21px;
+  top: 25px;
+  left: 22px;
   width: 50px;
   height: 50px;
   background-color: $bg-green;
@@ -17,10 +18,20 @@
   position: absolute;
 }
 
+.program__icon-slim {
+  left: 8px;
+  top: -3px;
+}
+
+.program__icon-pro {
+  top: 10px;
+  left: -9px;
+}
+
 .program__head {
-  margin-top: 12px;
-  margin-bottom: 28px;
-  margin-left: 70px;
+  margin-top: 10px;
+  margin-bottom: 29px;
+  margin-left: 71px;
   font-family: $oswald;
   font-weight: 400;
   font-size: 24px;
@@ -30,7 +41,7 @@
 
 .program__desc {
   margin-bottom: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 21px;
   font-family: $arial;
   font-size: 14px;
   line-height: 18px;
@@ -50,10 +61,10 @@
   &::after {
     content: "";
     position: absolute;
-    top: 7px;
+    top: 6px;
     width: 24px;
     height: 11px;
-    margin-left: 10px;
+    margin-left: 12px;
     background-image: url("../img/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
   }
@@ -71,11 +82,12 @@
 
 @media (min-width: $tablet-width) {
   .program {
-    padding: 50px;
+    padding: 61px 51px;
   }
 
   .program__logo {
-    right: 60px;
+    top: 91px;
+    right: 61px;
     width: 200px;
     height: 200px;
     margin-left: auto;
@@ -90,16 +102,31 @@
     height: 194px;
   }
 
+  .program__icon-pro {
+    top: 1px;
+  }
+
+  .program__head {
+    margin-top: 14px;
+    margin-bottom: 25px;
+    margin-left: 0;
+    font-size: 36px;
+  }
+
   .program__desc {
-    width: calc(100% - 230px);
+    margin-bottom: 55px;
+    padding: 0;
     font-size: 16px;
     line-height: 24px;
     border: none;
   }
 
-  .program__head {
-    margin-left: 0;
-    font-size: 36px;
+  .program__desc-slim {
+    width: 372px;
+  }
+
+  .program__desc-pro {
+    width: 340px;
   }
 
   .program__btn {
@@ -108,7 +135,50 @@
 
     &::after {
       top: 10px;
-      margin-left: 20px;
+      margin-left: 24px;
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .program__head {
+    margin-top: 13px;
+    margin-left: 162px;
+    margin-bottom: 74px;
+  }
+
+  .program__logo {
+    top: 46px;
+    left: 51px;
+    width: 100px;
+    height: 100px;
+    margin-left: 0;
+  }
+
+  .program__icon-slim {
+    left: 16px;
+    top: -7px;
+    width: 70px;
+    height: 97px;
+  }
+
+  .program__icon-pro {
+    top: 20px;
+    left: -17px;
+    width: 134px;
+    height: 56px;
+  }
+
+  .program__desc {
+    margin-bottom: 31px;
+  }
+
+  .program__desc-slim {
+    width: 100%;
+  }
+
+  .program__desc-pro {
+    width: 100%;
+  }
+}
+

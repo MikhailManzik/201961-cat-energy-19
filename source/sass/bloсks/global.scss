@@ -3,10 +3,10 @@ body {
   min-width: 320px;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
+// img {
+//   max-width: 100%;
+//   height: auto;
+// }
 
 .visually-hidden {
   position: absolute;
@@ -20,5 +20,11 @@ img {
 }
 
 .hidden {
-  overflow-x: hidden;
+  overflow: hidden;
+}
+
+@media (min-width: $tablet-width) {
+  .hidden-not {
+    overflow: visible;
+  }
 }

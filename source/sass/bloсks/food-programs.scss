@@ -1,9 +1,14 @@
 .food-programs__top {
   display: flex;
   flex-direction: column;
+  align-items: center;
   min-height: 408px;
   margin-bottom: 22px;
   text-align: center;
+}
+
+.food-programs__list {
+  margin-bottom: -5px;
 }
 
 .food-programs__item {
@@ -11,11 +16,15 @@
 }
 
 .food-programs__head {
+  margin-top: 28px;
+  margin-bottom: 24px;
   color: #ffffff;
   line-height: 36px;
 }
 
 .food-programs__slogan {
+  margin: 0;
+  margin-bottom: 29px;
   font-family: $oswald;
   font-size: 14px;
   line-height: 14px;
@@ -23,8 +32,14 @@
   color: #ffffff;
 }
 
+.food-programs__image {
+  display: block;
+  margin-bottom: 4px;
+}
+
 .food-programs__selection {
-  width: auto;
+  box-sizing: border-box;
+  width: 100%;
   margin-top: auto;
 }
 
@@ -33,16 +48,21 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    margin-bottom: 37px;
+    margin-bottom: 3px;
   }
 
   .food-programs__top {
-    min-height: 900px;
-    padding: 0 90px;
+    align-items: flex-start;
+    min-height: 817px;
+    padding-left: 87px;
+    padding-right: 45px;
     text-align: left;
   }
 
   .food-programs__head {
+    margin-top: 28px;
+    margin-bottom: 41px;
+    padding: 0;
     color: $color-black;
     line-height: 60px;
   }
@@ -56,27 +76,58 @@
 
   .food-programs__image {
     position: absolute;
+    top: 229px;
     left: 0;
     right: 0;
-    bottom: 690px;
     width: auto;
+    height: auto;
     margin: 0 auto;
   }
 
   .food-programs__selection {
+    width: auto;
     z-index: 1;
     align-self: flex-start;
     margin-top: 0;
   }
+
+  .food-programs__list {
+    margin-bottom: 12px;
+  }
+
+  .food-programs__item {
+    margin-bottom: 30px;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .food-programs__head {
+    width: 50%;
+    margin-top: 48px;
+  }
+
+  .food-programs__slogan {
+    margin-bottom: 52px;
+  }
+
+  .food-programs__image {
+    top: -33px;
+    left: 230px;
+  }
+
+  .food-programs__top {
+    min-height: 582px;
+    padding-left: 80px;
+  }
+
   .food-programs__list {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 68px;
   }
 
   .food-programs__item {
     width: 570px;
+    margin-bottom: 0;
   }
 }

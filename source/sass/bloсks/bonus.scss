@@ -18,11 +18,13 @@
 }
 
 .bonus__icon {
+  margin-top: 65px;
+  margin-bottom: 57px;
   fill: #ffffff;
-  margin: 65px 0;
 }
 
 .bonus__text {
+  margin-bottom: 42px;
   font-family: $arial;
   font-size: 16px;
   line-height: 20px;
@@ -40,6 +42,7 @@
 @media (min-width: $tablet-width) {
   .bonus {
     align-items: center;
+    min-height: 200px;
     background-image: url("../img/gift-photo-tablet@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -55,11 +58,16 @@
   }
 
   .bonus__icon {
-    fill: #ffffff;
     margin: 0;
+    margin-left: 90px;
+    fill: #ffffff;
   }
 
   .bonus__text {
+    margin-bottom: 42px;
+    margin-left: auto;
+    margin-right: 125px;
+    margin-top: 43px;
     text-align: left;
   }
 }
@@ -79,10 +87,15 @@
   }
 
   .bonus__icon {
-    margin-bottom: 65px;
+    margin: 0;
+    margin-top: 65px;
+    margin-bottom: 58px;
   }
 
   .bonus__text {
+    margin: 0;
+    margin-bottom: 42px;
+    padding: 0 43px;
     text-align: center;
   }
 }

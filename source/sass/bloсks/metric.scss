@@ -1,9 +1,9 @@
 .metric {
   position: relative;
-  width: 45%;
+  width: 44%;
   min-height: 54px;
   border: 1px solid #cdcdcd;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 .metric__wrapper {
@@ -27,6 +27,8 @@
 }
 
 .metric__desc {
+  margin: 0;
+  margin-top: 10px;
   font-family: $arial;
   font-size: 12px;
   line-height: 12px;
@@ -34,8 +36,16 @@
 }
 
 @media (min-width: $tablet-width) {
+  .metric {
+    width: 160px;
+    min-height: 70px;
+    margin-right: 42px;
+  }
+
   .metric__wrapper {
-    width: 127px;
+    top: 14px;
+    width: 142px;
+    background-color: $color-white;
   }
 
   .metric__value {
@@ -44,7 +54,15 @@
   }
 
   .metric__desc {
+    margin-top: 11px;
     font-size: 14px;
     line-height: 14px;
+    text-transform: lowercase;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .metric__wrapper {
+    background-color: $bg-grey;
   }
 }

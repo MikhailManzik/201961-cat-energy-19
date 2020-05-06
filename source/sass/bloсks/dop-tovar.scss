@@ -30,7 +30,8 @@
 @media (min-width: $tablet-width) {
   .dop-tovar__wrap {
     display: flex;
-    align-items: center;
+    align-items: baseline;
+    margin-bottom: 5px;
   }
 
   .dop-tovar__head {
@@ -47,19 +48,27 @@
   .dop-tovar__value {
     margin-left: 52px;
   }
+
+  .dop-tovar__order {
+    font-size: 16px;
+    margin-bottom: 11px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .dop-tovar {
     display: flex;
+    align-items: center;
   }
 
   .dop-tovar__wrap {
+    align-items: baseline;
     width: 70%;
   }
 
   .dop-tovar__head {
     width: 50%;
+    margin-right: 38px;
   }
 
   .dop-tovar__desc {
@@ -69,7 +78,7 @@
 
   .dop-tovar__order {
     width: 25%;
-    margin-left: 50px;
+    margin-left: 37px;
     flex-shrink: 0;
   }
 }

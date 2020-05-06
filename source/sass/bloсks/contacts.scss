@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   padding-top: 28px;
+  padding-right: 4px;
   padding-bottom: 26px;
 }
 
@@ -26,6 +27,8 @@
   .contacts__wrapper {
     display: flex;
     justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 42px;
     padding-bottom: 58px;
     padding-top: 65px;
   }
@@ -36,6 +39,7 @@
   }
 
   .contacts__address {
+    margin-top: -1px;
     font-size: 16px;
     line-height: 20px;
     text-align: right;
@@ -43,7 +47,7 @@
 
   .contacts__sity {
     display: block;
-    margin-top: 18px;
+    margin-top: 19px;
   }
 }
 

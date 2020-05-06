@@ -27,8 +27,8 @@
 
 .main-header__logo {
   display: block;
-  margin-top: 10px;
-  margin-bottom: 14px;
+  margin-top: 11px;
+  margin-bottom: 12px;
 }
 
 @media (min-width: $tablet-width) {
@@ -41,12 +41,12 @@
   .main-header__wrapper {
     display: flex;
     justify-content: space-between;
-    padding: 24px 0;
+    padding: 25px 0;
   }
 
   .main-header__logo {
     margin: 0;
-    margin-right: 93px;
+    margin-right: 83px;
   }
 }
 
@@ -70,5 +70,9 @@
         background-image: url("../img/index-background-desktop@2x.jpg");
       }
     }
+  }
+
+  .main-header__wrapper {
+    padding: 55px 0;
   }
 }
