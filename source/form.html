@@ -40,7 +40,7 @@
 
     <main class="hidden">
       <div class="container">
-        <h1 class="title-big title-big-inner title-big-form">Подбор программы</h1>
+        <h1 class="title-big title-big--inner title-big-form">Подбор программы</h1>
         <section class="form">
         <h2 class="visually-hidden">Анкета</h2>
         <p class="form__info">Заполните анкету и мы подберем<br> программу питания для вашего кота</p>
@@ -48,17 +48,20 @@
           <div class="form__pet-wrap">
             <fieldset class="form__pet pet">
             <div class="pet__item">
-              <label class="pet__label field-text">Имя:*
+              <label class="pet__label field-text">
+                <span>Имя:*</span>
                 <input class="field-text__input" type="text" name="cat-name" placeholder="Барсик">
               </label>
             </div>
             <div class="pet__item">
-              <label class="pet__label field-text">Вес (кг):*
+              <label class="pet__label field-text">
+                <span>Вес (кг):*</span>
                 <input class="field-text__input" type="text" name="cat-weight" placeholder="7">
               </label>
             </div>
             <div class="pet__item">
-              <label class="pet__label field-text">Возраст (лет):
+              <label class="pet__label field-text">
+                <span>Возраст (лет):</span>
                 <input class="field-text__input" type="text" name="cat-old" placeholder="7">
               </label>
             </div>
@@ -88,7 +91,8 @@
             <legend class="owner__head title-small">Контактные данные (владельца кота)</legend>
             <div class="owner__list">
               <div class="owner__item">
-              <label class="owner__caption field-text">e-mail:*
+              <label class="owner__caption field-text">
+                <span>e-mail:*</span>
                 <input class="field-text__input" type="email" name="owner-email" placeholder="kuklachev@gmail.com">
                 <svg class="field-text__icon field-text__icon-email" aria-hidden="true" focusable="false" width="17" height="13">
                   <use xlink:href="img/sprite.svg#icon-email"></use>
@@ -96,7 +100,8 @@
               </label>
               </div>
               <div class="owner__item">
-              <label class="owner__caption field-text">Телефон:*
+              <label class="owner__caption field-text">
+                <span>Телефон:*</span>
                 <input class="field-text__input" type="text" name="owner-phone" placeholder="8 (960) 900-60-90">
                 <svg class="field-text__icon field-text__icon-phone" aria-hidden="true" focusable="false" width="20" height="20">
                   <use xlink:href="img/sprite.svg#icon-phone"></use>
@@ -230,8 +235,8 @@
       </div>
     </footer>
 
-    <script src="js/scripts.js"></script>
     <script src="js/picturefill.js"></script>
-    <script src="js/svg4everybody.js"></script>
+    <script src="js/svgxuse.js"></script>
+    <script src="js/scripts.js"></script>
   </body>
 </html>
