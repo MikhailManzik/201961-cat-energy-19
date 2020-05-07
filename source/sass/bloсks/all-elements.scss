@@ -1,4 +1,5 @@
 .all-elements {
+  position: relative;
   padding-top: 26px;
   text-align: center;
 }
@@ -8,6 +9,8 @@
 }
 
 .all-elements__title {
+  margin-top: 19px;
+  margin-bottom: 0;
   font-family: $oswald;
   font-size: 16px;
   line-height: 20px;
@@ -16,6 +19,8 @@
 }
 
 .all-elements__desc {
+  margin-top: 8px;
+  margin-bottom: 20px;
   font-family: $arial;
   font-size: 12px;
   line-height: 16px;
@@ -42,26 +47,30 @@
     padding-top: 54px;
   }
 
-  .all-elements__title {
-    margin: 0 50px;
-    margin-bottom: 30px;
-    font-size: 20px;
-    line-height: 20px;
-  }
-
-  .all-elements__desc {
-    margin: 0 50px;
-    margin-bottom: 50px;
-    font-size: 16px;
-  }
-
   .all-elements__icon {
-    margin-bottom: 52px;
+    margin-bottom: 45px;
   }
 
   .all-elements__icon-plus {
     width: 60px;
     height: 60px;
+  }
+
+  .all-elements__title {
+    margin: 0 50px;
+    margin-bottom: 28px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .all-elements__desc {
+    margin: 0 40px;
+    margin-bottom: 86px;
+    font-size: 16px;
+  }
+
+  .all-elements__show-all {
+    font-size: 16px;
   }
 }
 
@@ -79,6 +88,6 @@
   .all-elements__desc {
     margin-left: 0;
     margin-right: 0;
-    margin-bottom: 66px;
+    margin-bottom: 86px;
   }
 }

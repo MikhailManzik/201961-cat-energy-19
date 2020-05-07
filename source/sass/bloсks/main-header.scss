@@ -1,4 +1,19 @@
-.main-header-bg {
+.main-header {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 54px;
+    width: 100vw;
+    height: 1px;
+    margin-left: -50vw;
+    background-color: #e6e6e6;
+  }
+}
+
+.main-header--bg {
   position: relative;
 
   &::after {
@@ -27,12 +42,19 @@
 
 .main-header__logo {
   display: block;
-  margin-top: 10px;
-  margin-bottom: 14px;
+  width: 191px;
+  margin-top: 11px;
+  margin-bottom: 12px;
 }
 
 @media (min-width: $tablet-width) {
-  .main-header-bg {
+  .main-header {
+    &::before {
+      display: none;
+    }
+  }
+
+  .main-header--bg {
     &::after {
       display: none;
     }
@@ -41,17 +63,17 @@
   .main-header__wrapper {
     display: flex;
     justify-content: space-between;
-    padding: 24px 0;
+    padding: 25px 0;
   }
 
   .main-header__logo {
     margin: 0;
-    margin-right: 93px;
+    margin-right: 56px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .main-header-bg {
+  .main-header--bg {
     &::after {
       display: block;
       height: 696px;
@@ -70,5 +92,9 @@
         background-image: url("../img/index-background-desktop@2x.jpg");
       }
     }
+  }
+
+  .main-header__wrapper {
+    padding: 55px 0;
   }
 }

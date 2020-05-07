@@ -11,7 +11,7 @@
 
 .field-text__input {
   flex-grow: 1;
-  margin-left: 13px;
+  margin-left: 10px;
   padding: 12px 15px;
   font-family: $oswald;
   font-size: 16px;
@@ -43,6 +43,10 @@
   right: 14px;
 }
 
+.field-text__icon-email {
+  right: 17px;
+}
+
 @media (min-width: $tablet-width) {
   .field-text {
     font-size: 20px;
@@ -51,7 +55,9 @@
 
   .field-text__input {
     margin-left: 17px;
-    padding: 16px 17px;
+    padding: 0 18px;
+    padding-top: 18px;
+    padding-bottom: 15px;
   }
 
   .field-text__input::placeholder {

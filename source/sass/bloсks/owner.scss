@@ -1,3 +1,7 @@
+.owner__list {
+  margin-top: 20px;
+  margin-bottom: 34px;
+}
 
 .owner__item {
   margin-bottom: 15px;
@@ -5,7 +9,11 @@
 
 @media (min-width: $tablet-width) {
   .owner__head {
-    margin-bottom: 40px;
+    margin-bottom: 18px;
+  }
+
+  .owner__list {
+    margin-bottom: 20px;
   }
 
   .owner__item {
@@ -15,9 +23,14 @@
 
 
 @media (min-width: $desktop-width) {
+  .owner__head {
+    margin-bottom: 22px;
+  }
+
   .owner__list {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 0;
   }
 
   .owner__item {

@@ -5,7 +5,7 @@
 
 .products__item {
   position: relative;
-  padding-bottom: 24px;
+  padding-bottom: 23px;
 
   &::after {
     content: "";
@@ -16,10 +16,6 @@
     height: 1px;
     margin-left: -50vw;
     background-color: #ededed;
-  }
-
-  &:last-child::after {
-    display: none;
   }
 }
 
@@ -44,7 +40,7 @@
     width: 45%;
     margin-right: 60px;
     margin-top: 140px;
-    padding-bottom: 40px;
+    padding-bottom: 39px;
     background-color: $bg-grey;
 
     &::after {
@@ -63,6 +59,7 @@
 
   .products__order {
     margin: 0 38px;
+    font-size: 16px;
   }
 }
 
@@ -70,6 +67,7 @@
   .products__item {
     width: 20%;
     margin-right: 80px;
+    margin-bottom: 3px;
   }
 
   .products__item:nth-child(2n) {

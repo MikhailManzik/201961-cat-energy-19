@@ -1,5 +1,9 @@
+.extra__list {
+  margin-top: 26px;
+}
+
 .extra__item {
-  margin-bottom: 23px;
+  margin-bottom: 22px;
 }
 
 @media (min-width: $tablet-width) {
@@ -11,6 +15,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 0;
   }
 
   .extra__item {

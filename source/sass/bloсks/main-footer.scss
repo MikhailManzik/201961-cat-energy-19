@@ -5,12 +5,21 @@
 
 .main-footer__logo {
   padding-top: 40px;
-  padding-bottom: 28px;
+  padding-bottom: 26px;
   border-bottom: 1px solid #d9d9d9;
 }
 
 .main-footer__social {
   border-bottom: 1px solid #d9d9d9;
+}
+
+.main-footer__contacts {
+  position: relative;
+  background-color: $bg-grey;
+}
+
+.main-footer__contacts-bg {
+  background: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -39,5 +48,10 @@
 @media (min-width: $desktop-width) {
   .main-footer__contacts {
     position: relative;
+  }
+
+  .main-footer__bottom {
+    padding-top: 60px;
+    padding-bottom: 54px;
   }
 }

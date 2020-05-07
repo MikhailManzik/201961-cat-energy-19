@@ -1,3 +1,7 @@
+.dop-products {
+  margin-bottom: 35px;
+}
+
 .dop-products__list {
   @include indent;
   margin-bottom: 40px;
@@ -7,13 +11,25 @@
 
 .dop-products__item {
   position: relative;
-  padding-top: 15px;
-  padding-bottom: 17px;
+  padding-top: 13px;
+  padding-bottom: 15px;
   border-bottom: 1px solid #ededed;
 }
 
 @media (min-width: $tablet-width) {
+  .dop-products {
+    margin-bottom: 76px;
+  }
+
+  .dop-products__caption {
+    margin-left: -2px;
+    margin-bottom: 44px;
+    padding-left: 38px;
+    padding-right: 37px;
+  }
+
   .dop-products__list {
+    margin-bottom: 68px;
     border: 1px solid #ededed;
   }
 
@@ -24,6 +40,15 @@
 }
 
 @media (min-width: $desktop-width) {
+  .dop-products {
+    margin-bottom: 17px;
+  }
+
+  .dop-products__caption {
+    margin-top: 42px;
+    margin-left: -40px;
+  }
+
   .dop-products__wrap {
     display: flex;
     align-items: flex-start;
@@ -40,5 +65,6 @@
   .dop-products__item {
     padding-left: 0;
     padding-right: 0;
+    padding-bottom: 5px;
   }
 }

@@ -6,6 +6,12 @@
   width: 50%;
 }
 
+.tovar__image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .tovar__info {
   width: 50%;
 }
@@ -45,7 +51,7 @@
     justify-content: center;
     width: 100%;
     min-height: 212px;
-    margin-top: -80px;
+    margin-top: -88px;
   }
 
   .tovar__image {
@@ -57,11 +63,13 @@
     flex-direction: column;
     width: auto;
     padding: 0 38px;
-    padding-bottom: 38px;
+    padding-bottom: 23px;
   }
 
   .tovar__title {
     align-self: center;
+    margin-top: 39px;
+    margin-bottom: 28px;
     font-size: 20px;
     line-height: 20px;
     text-align: center;
@@ -77,7 +85,12 @@
 }
 
 @media (min-width: $desktop-width) {
+  .tovar__photo {
+    margin-top: -85px;
+  }
+
   .tovar__title {
     width: 90%;
+    margin-top: 36px;
   }
 }

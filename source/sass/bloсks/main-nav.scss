@@ -1,3 +1,7 @@
+.main-nav-closed {
+  display: none;
+}
+
 .main-nav__list {
   @include indent;
   display: flex;
@@ -9,17 +13,6 @@
   position: relative;
   display: flex;
   justify-content: center;
-
-  &:first-child::before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    top: 0;
-    width: 100vw;
-    height: 1px;
-    margin-left: -50vw;
-    background-color: #e6e6e6;
-  }
 
   &::after {
     content: "";
@@ -36,11 +29,11 @@
 .main-nav__link {
   position: relative;
   display: block;
-  padding-top: 23px;
-  padding-bottom: 22px;
+  padding: 23px 0;
   font-family: $oswald;
   font-size: 20px;
   line-height: 20px;
+  font-weight: 500;
   text-transform: uppercase;
   text-decoration: none;
   color: $color-black;
@@ -63,6 +56,10 @@
     margin-left: -25px;
   }
 
+  .main-nav-closed {
+    display: flex;
+  }
+
   .main-nav__list {
     display: flex;
     flex-direction: row;
@@ -70,12 +67,8 @@
   }
 
   .main-nav__item {
-    margin-left: 25px;
+    margin-left: 36px;
     border-bottom: none;
-
-    &::before {
-      display: none;
-    }
 
     &::after {
       display: none;
@@ -88,6 +81,7 @@
     font-family: $oswald;
     font-size: 18px;
     line-height: 24.86px;
+    font-weight: 400;
 
     &:hover {
       color: $color-black-hover;
@@ -111,12 +105,26 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main-nav__item {
+    margin-left: 34px;
+  }
+
   .main-nav__link {
     font-size: 20px;
   }
 
   .main-nav__link--white {
     color: $color-white;
+
+    &:hover {
+      color: $color-white;
+      opacity: 0.6;
+    }
+
+    &:active {
+      color: $color-white;
+      opacity: 0.3;
+    }
   }
 
   .main-nav__link--index-active {

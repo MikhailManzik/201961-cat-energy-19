@@ -3,7 +3,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 19px 0;
+  padding-top: 22px;
+  padding-bottom: 17px;
   list-style: none;
 
   :last-child {
@@ -16,8 +17,9 @@
 }
 
 .social__link {
-  width: 24px;
+  width: 22px;
   display: block;
+  fill: #666666;
 
   &:hover {
     fill: $bg-green;
@@ -26,6 +28,10 @@
   &:active {
     opacity: 0.3;
   }
+}
+
+.social__icon {
+  max-width: 100%;
 }
 
 @media (min-width: $tablet-width) {

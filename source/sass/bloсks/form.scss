@@ -23,7 +23,11 @@
 }
 
 .form__pet {
-  padding-bottom: 11px;
+  padding-bottom: 9px;
+}
+
+.form__pet-wrap {
+  margin-bottom: 19px;
 }
 
 .form__diet {
@@ -62,18 +66,19 @@
   }
 
   .form__info {
-    margin-bottom: 66px;
+    margin-top: 56px;
+    margin-bottom: 64px;
     font-size: 20px;
     line-height: 30px;
   }
 
   .form__pet {
-    margin-bottom: 40px;
+    margin-bottom: 44px;
   }
 
   .form__diet {
     margin: 0;
-    margin-bottom: 40px;
+    margin-bottom: 39px;
     padding: 0 28px;
     padding-top: 32px;
   }
@@ -87,7 +92,7 @@
   }
 
   .form__comment {
-    margin-bottom: 25px;
+    margin-bottom: 10px;
   }
 
   .form__send {
@@ -118,6 +123,7 @@
   .form__pet-wrap {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 0;
   }
 
   .form__pet,
@@ -141,7 +147,7 @@
   }
 
   .form__comment {
-    margin-bottom: 34px;
+    margin-bottom: 18px;
   }
 
   .form__extra {
@@ -150,6 +156,7 @@
 
   .form__submit {
     width: calc(50% - 40px);
+    font-size: 20px;
   }
 
   .form__required {
