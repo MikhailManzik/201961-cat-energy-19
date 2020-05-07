@@ -1,6 +1,6 @@
 .toggle {
   position: absolute;
-  top: 13px;
+  top: 12px;
   right: 20px;
   width: 24px;
   height: 18px;
@@ -10,8 +10,14 @@
   cursor: pointer;
 }
 
+.toggle__icon {
+  transition: 0.5s;
+  animation-name: button-menu;
+  animation-duration: 1s;
+}
+
 .toggle__icon-opened {
-  position: relative;
+  position: absolute;
   display: block;
   width: 24px;
   height: 2px;
@@ -37,7 +43,7 @@
 }
 
 .toggle__icon-closed {
-  position: relative;
+  position: absolute;
   display: block;
   width: 24px;
   height: 2px;
@@ -47,6 +53,7 @@
   &::after {
     content: "";
     position: absolute;
+    top: 0;
     display: block;
     width: 24px;
     height: 2px;

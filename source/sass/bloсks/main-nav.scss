@@ -1,3 +1,7 @@
+.main-nav-closed {
+  display: none;
+}
+
 .main-nav__list {
   @include indent;
   display: flex;
@@ -9,17 +13,6 @@
   position: relative;
   display: flex;
   justify-content: center;
-
-  &:first-child::before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    top: 0;
-    width: 100vw;
-    height: 1px;
-    margin-left: -50vw;
-    background-color: #e6e6e6;
-  }
 
   &::after {
     content: "";
@@ -72,10 +65,6 @@
   .main-nav__item {
     margin-left: 36px;
     border-bottom: none;
-
-    &::before {
-      display: none;
-    }
 
     &::after {
       display: none;
