@@ -1,0 +1,9 @@
+.hidden {
+  overflow: hidden;
+}
+
+@media (min-width: $desktop-width) {
+  .hidden--not {
+    overflow: visible;
+  }
+}
