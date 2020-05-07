@@ -13,7 +13,7 @@
   }
 }
 
-.main-header-bg {
+.main-header--bg {
   position: relative;
 
   &::after {
@@ -54,7 +54,7 @@
     }
   }
 
-  .main-header-bg {
+  .main-header--bg {
     &::after {
       display: none;
     }
@@ -68,12 +68,12 @@
 
   .main-header__logo {
     margin: 0;
-    margin-right: 65px;
+    margin-right: 56px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .main-header-bg {
+  .main-header--bg {
     &::after {
       display: block;
       height: 696px;

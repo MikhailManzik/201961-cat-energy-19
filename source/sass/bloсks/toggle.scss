@@ -1,9 +1,9 @@
 .toggle {
   position: absolute;
-  top: 12px;
+  top: 8px;
   right: 20px;
   width: 24px;
-  height: 18px;
+  height: 22px;
   padding: 0;
   border: none;
   background-color: transparent;
@@ -11,7 +11,7 @@
 }
 
 .toggle__icon {
-  transition: 0.5s;
+  transition: 0.1s;
   animation-name: button-menu;
   animation-duration: 1s;
 }

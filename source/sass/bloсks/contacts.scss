@@ -7,6 +7,7 @@
 }
 
 .contacts__info {
+  width: 50%;
   margin: 0;
   font-family: $oswald;
   font-size: 16px;
@@ -16,7 +17,9 @@
 }
 
 .contacts__address {
+  width: 50%;
   margin: 0;
+  padding-left: 5px;
   font-family: $arial;
   font-size: 14px;
   line-height: 20px;
@@ -34,11 +37,13 @@
   }
 
   .contacts__info {
+    width: 30%;
     font-size: 20px;
     line-height: 25px;
   }
 
   .contacts__address {
+    width: 30%;
     margin-top: -1px;
     font-size: 16px;
     line-height: 20px;
@@ -60,7 +65,8 @@
     position: absolute;
     top: 95px;
     z-index: 1;
-    width: auto;
+    justify-content: space-between;
+    width: 420px;
     margin: 0;
     padding-top: 64px;
     padding-bottom: 60px;
@@ -69,8 +75,13 @@
     background-color: $color-white;
   }
 
+  .contacts__info {
+    width: 40%;
+  }
+
   .contacts__address {
+    width: 40%;
     text-align: left;
-    margin-left: 95px;
+    margin-left: 0;
   }
 }
