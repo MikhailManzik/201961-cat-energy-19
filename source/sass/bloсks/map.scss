@@ -16,6 +16,11 @@
   margin: 0;
 }
 
+.map__pic {
+  position: absolute;
+  width: 100%;
+}
+
 @media (min-width: $tablet-width) {
   .map {
     height: 400px;

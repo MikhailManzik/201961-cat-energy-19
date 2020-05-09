@@ -177,7 +177,7 @@
           </div>
         </div>
         <div class="map">
-          <iframe class="map__road" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" allowfullscreen=""></iframe>
+          <div class="map__road" id="map"></div>
           <picture class="map__images">
             <source type="image/webp" media="(min-width:1300px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width:768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
@@ -185,7 +185,7 @@
 
             <source media="(min-width:1440px)" srcset="img/bg-map-desktop@1x.png">
             <source media="(min-width:768px)" srcset="img/bg-map-tablet@1x.png">
-              <img src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" width="320" height="400" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+            <img class="map__pic" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" width="320" height="400" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
           </picture>
         </div>
       </div>
@@ -235,8 +235,10 @@
       </div>
     </footer>
 
-    <script src="js/picturefill.js"></script>
-    <script src="js/svgxuse.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=6294f255-a93a-4b00-b98c-5b72b1915e5a&lang=ru_RU" type="text/javascript"></script>
+    <script src="js/map.min.js"></script>
+    <script src="js/picturefill.min.js"></script>
+    <script src="js/svgxuse.min.js"></script>
+    <script src="js/scripts.min.js"></script>
   </body>
 </html>

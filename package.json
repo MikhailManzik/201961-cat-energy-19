@@ -46,6 +46,9 @@
     "node": "8.16"
   },
   "dependencies": {
-    "del": "^5.1.0"
+    "del": "^5.1.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-uglify": "^3.0.2",
+    "readable-stream": "^3.6.0"
   }
 }
