@@ -67,33 +67,27 @@
             </div>
             </fieldset>
             <fieldset class="form__diet diet">
-            <div class="diet__item">
-              <label class="diet__desc field-radio">
-                <input class="field-radio__input visually-hidden" type="radio" name="diet" value="slim" checked="">
-                <span class="field-radio__text">Похудение</span>
-              </label>
+            <div class="diet__item field-radio">
+              <input class="visually-hidden field-radio__input" id="diet-slim" type="radio" name="diet" value="slim" checked="">
+              <label class="field-radio__label" for="diet-slim">Похудение</label>
             </div>
-            <div class="diet__item">
-              <label class="diet__desc field-radio">
-                <input class="field-radio__input visually-hidden" type="radio" name="diet" value="weight">
-                <span class="field-radio__text">Набор массы</span>
-              </label>
+            <div class="diet__item field-radio">
+              <input class="visually-hidden field-radio__input" id="diet-pro" type="radio" name="diet" value="weight">
+              <label class="field-radio__label" for="diet-pro">Набор массы</label>
             </div>
-            <div class="diet__item">
-              <label class="diet__desc field-radio">
-                <input class="field-radio__input visually-hidden" type="radio" name="diet" value="advice">
-                <span class="field-radio__text">Не знаю (нужен ваш совет)</span>
-              </label>
+            <div class="diet__item field-radio">
+              <input class="visually-hidden field-radio__input" id="diet-advice" type="radio" name="diet" value="advice">
+              <label class="field-radio__label" for="diet-advice">Не знаю (нужен ваш совет)</label>
             </div>
             </fieldset>
           </div>
           <fieldset class="form__owner owner">
-            <legend class="owner__head title-small">Контактные данные (владельца кота)</legend>
+            <legend class="owner__head title-small title-small--line">Контактные данные (владельца кота)</legend>
             <div class="owner__list">
               <div class="owner__item">
               <label class="owner__caption field-text">
                 <span>e-mail:*</span>
-                <input class="field-text__input" type="email" name="owner-email" placeholder="kuklachev@gmail.com">
+                <input class="field-text__input field-text__input-email" type="email" name="owner-email" placeholder="kuklachev@gmail.com">
                 <svg class="field-text__icon field-text__icon-email" aria-hidden="true" focusable="false" width="17" height="13">
                   <use xlink:href="img/sprite.svg#icon-mail"></use>
                 </svg>
@@ -102,7 +96,7 @@
               <div class="owner__item">
               <label class="owner__caption field-text">
                 <span>Телефон:*</span>
-                <input class="field-text__input" type="text" name="owner-phone" placeholder="8 (960) 900-60-90">
+                <input class="field-text__input field-text__input-phone" type="text" name="owner-phone" placeholder="8 (960) 900-60-90">
                 <svg class="field-text__icon field-text__icon-phone" aria-hidden="true" focusable="false" width="20" height="20">
                   <use xlink:href="img/sprite.svg#icon-phone"></use>
                 </svg>
@@ -117,45 +111,21 @@
           <fieldset class="form__extra extra">
             <legend class="extra__head title-small">Дополнительно</legend>
             <div class="extra__list">
-              <div class="extra__item">
-              <label class="extra__desc field-checkbox">
-                <input class="field-checkbox__input visually-hidden" type="checkbox" name="sweetener" checked="">
-                <span class="field-checkbox__text">Сахарозаменитель
-                  <svg class="field-checkbox__icon" aria-hidden="true" focusable="false" width="21" height="16">
-                    <use xlink:href="img/sprite.svg#icon-tick"></use>
-                  </svg>
-                </span>
-              </label>
+              <div class="extra__item field-checkbox">
+                <input class="field-checkbox__input visually-hidden" id="tovar-sweetener" type="checkbox" name="sweetener" checked="">
+                <label class="field-checkbox__label" for="tovar-sweetener">Сахарозаменитель</label>
               </div>
-              <div class="extra__item">
-              <label class="extra__desc field-checkbox">
-                <input class="field-checkbox__input visually-hidden" type="checkbox" name="water">
-                <span class="field-checkbox__text">Питьевая вода
-                  <svg class="field-checkbox__icon" aria-hidden="true" focusable="false" width="21" height="16">
-                    <use xlink:href="img/sprite.svg#icon-tick"></use>
-                  </svg>
-                </span>
-              </label>
+              <div class="extra__item field-checkbox">
+                <input class="field-checkbox__input visually-hidden" id="tovar-water" type="checkbox" name="water">
+                <label class="field-checkbox__label" for="tovar-water">Питьевая вода</label>
               </div>
-              <div class="extra__item">
-              <label class="extra__desc field-checkbox">
-                <input class="field-checkbox__input visually-hidden" type="checkbox" name="milk">
-                <span class="field-checkbox__text">Молоко
-                  <svg class="field-checkbox__icon" aria-hidden="true" focusable="false" width="21" height="16">
-                    <use xlink:href="img/sprite.svg#icon-tick"></use>
-                  </svg>
-                </span>
-              </label>
+              <div class="extra__item field-checkbox">
+                <input class="field-checkbox__input visually-hidden" id="tovar-milk" type="checkbox" name="milk">
+                <label class="field-checkbox__label" for="tovar-milk">Молоко</label>
               </div>
-              <div class="extra__item">
-              <label class="extra__desc field-checkbox">
-                <input class="field-checkbox__input visually-hidden" type="checkbox" name="vitamins">
-                <span class="field-checkbox__text">Витамины
-                  <svg class="field-checkbox__icon" aria-hidden="true" focusable="false" width="21" height="16">
-                    <use xlink:href="img/sprite.svg#icon-tick"></use>
-                  </svg>
-                </span>
-              </label>
+              <div class="extra__item field-checkbox">
+                <input class="field-checkbox__input visually-hidden" id="tovar-vitamins" type="checkbox" name="vitamins">
+                <label class="field-checkbox__label" for="tovar-vitamins">Витамины</label>
               </div>
             </div>
           </fieldset>

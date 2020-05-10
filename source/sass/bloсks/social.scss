@@ -24,10 +24,10 @@
   &:hover {
     fill: $bg-green;
   }
+}
 
-  &:active {
-    opacity: 0.3;
-  }
+.social__icon:active {
+  opacity: 0.3;
 }
 
 .social__icon {

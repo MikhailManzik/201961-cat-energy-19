@@ -4,20 +4,18 @@
   align-items: center;
   font-family: $oswald;
   font-size: 16px;
-  line-height: 18px;
   text-transform: uppercase;
   color: $color-black;
 }
 
 .field-text__input {
   flex-grow: 1;
-  margin-left: 10px;
-  padding: 12px 15px;
+  margin-left: 14px;
+  padding: 10px 15px;
   font-family: $oswald;
   font-size: 16px;
-  line-height: 18px;
   text-transform: uppercase;
-  color: $color-black;
+  color: $color-grey;
   border: 1px solid $color-light-grey;
 
   &:hover {
@@ -28,15 +26,23 @@
     border: 1px solid $color-grey;
     box-shadow: inset 0 0 0 2px $color-grey;
   }
+
+  &::placeholder {
+    color: $color-grey;
+    opacity: 1;
+  }
+}
+
+.field-text__input-email {
+  margin-left: 11px;
+}
+
+.field-text__input-phone {
+  margin-left: 10px;
 }
 
 .field-text__input:hover + .field-text__icon {
   fill: $bg-green;
-}
-
-.field-text__input::placeholder {
-  color: $color-grey;
-  opacity: 1;
 }
 
 .field-text__icon {
@@ -51,18 +57,45 @@
 @media (min-width: $tablet-width) {
   .field-text {
     font-size: 20px;
-    line-height: 20px;
   }
 
   .field-text__input {
-    margin-left: 17px;
-    padding: 0 18px;
-    padding-top: 18px;
-    padding-bottom: 15px;
+    margin-left: 18px;
+    padding: 11px 18px;
+    font-size: 20px;
   }
 
   .field-text__input::placeholder {
     font-size: 20px;
-    line-height: 20px;
+  }
+
+  .field-text__input-email {
+    margin-left: 22px;
+  }
+
+  .field-text__input-phone {
+    margin-left: 15px;
+  }
+
+  .field-text__icon {
+    top: 20px;
+    right: 16px;
+  }
+
+  .field-text__icon-phone {
+    top: 18px;
+    right: 12px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .field-text__icon {
+    top: 20px;
+    right: 20px;
+  }
+
+  .field-text__icon-phone {
+    top: 18px;
+    right: 19px;
   }
 }
