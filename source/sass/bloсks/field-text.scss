@@ -31,6 +31,18 @@
     color: $color-grey;
     opacity: 1;
   }
+
+  &:focus:required:invalid {
+    border: 1px solid #ff8282;
+    box-shadow: inset 0 0 0 2px #ff8282;
+  }
+}
+
+.field-text__input--error {
+  &:invalid {
+    border: 1px solid #ff8282;
+    box-shadow: inset 0 0 0 2px #ff8282;
+  }
 }
 
 .field-text__input-email {
@@ -43,6 +55,10 @@
 
 .field-text__input:hover + .field-text__icon {
   fill: $bg-green;
+}
+
+.field-text__input:focus:required:invalid + .field-text__icon {
+  fill: #ff8282;
 }
 
 .field-text__icon {
