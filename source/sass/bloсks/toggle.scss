@@ -16,7 +16,7 @@
   animation-duration: 1s;
 }
 
-.toggle__icon-opened {
+.toggle__icon--opened {
   position: absolute;
   display: block;
   width: 24px;
@@ -42,7 +42,7 @@
   }
 }
 
-.toggle__icon-closed {
+.toggle__icon--closed {
   position: absolute;
   display: block;
   width: 24px;

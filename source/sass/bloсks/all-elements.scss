@@ -2,14 +2,19 @@
   position: relative;
   padding-top: 26px;
   text-align: center;
-}
 
-.all-elements__icon-plus {
-  fill: #d3d3d3;
+  &::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    background-image: url("../img/icon-plus.svg");
+  }
 }
 
 .all-elements__title {
-  margin-top: 19px;
+  margin-top: 23px;
   margin-bottom: 0;
   font-family: $oswald;
   font-size: 16px;
@@ -45,19 +50,17 @@
   .all-elements {
     padding: 0 38px;
     padding-top: 54px;
-  }
 
-  .all-elements__icon {
-    margin-bottom: 45px;
-  }
-
-  .all-elements__icon-plus {
-    width: 60px;
-    height: 60px;
+    &::before {
+      width: 60px;
+      height: 60px;
+      opacity: 0.2;
+    }
   }
 
   .all-elements__title {
     margin: 0 50px;
+    margin-top: 49px;
     margin-bottom: 28px;
     font-size: 20px;
     line-height: 20px;

@@ -6,6 +6,7 @@
 .advantages__list {
   @include indent;
   padding-bottom: 24px;
+  counter-reset: section;
   list-style: none;
 }
 
@@ -39,10 +40,24 @@
   }
 
   .advantages__item {
+    position: relative;
     flex-basis: 45%;
     margin-right: 6px;
     padding-top: 46px;
     padding-bottom: 66px;
+
+    &::after {
+      counter-increment: section;
+      content: counter(section);
+      z-index: -1;
+      position: absolute;
+      top: 7px;
+      margin-left: 113px;
+      font-family: $oswald;
+      font-size: 281px;
+      line-height: 281px;
+      color: $bg-grey;
+    }
   }
 }
 
@@ -51,8 +66,16 @@
     margin-bottom: 6px;
   }
 
+  .advantages__list {
+    justify-content: flex-start;
+  }
+
   .advantages__item {
-    flex-basis: 20%;
+    flex-basis: 245px;
+    margin-right: 80px;
+  }
+
+  :nth-child(4n) {
     margin-right: 0;
   }
 }

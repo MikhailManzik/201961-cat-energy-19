@@ -50,7 +50,7 @@
     text-align: right;
   }
 
-  .contacts__sity {
+  .contacts__city {
     display: block;
     margin-top: 19px;
   }
@@ -62,9 +62,9 @@
   }
 
   .contacts__wrapper {
+    z-index: 2;
     position: absolute;
     top: 95px;
-    z-index: 1;
     justify-content: space-between;
     width: 420px;
     margin: 0;

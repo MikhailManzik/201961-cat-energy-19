@@ -31,10 +31,15 @@
 
   .extra__list {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 
   .extra__item {
-    width: 20%;
+    width: 245px;
+    margin-right: 80px;
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
   }
 }

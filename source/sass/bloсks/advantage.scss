@@ -1,31 +1,70 @@
 .advantage {
   display: flex;
+
+  &::before {
+    content: "";
+    display: block;
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    background-color: $bg-green;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50px;
+  }
 }
 
-.advantage__image {
-  flex-shrink: 0;
-  width: 60px;
-  height: 60px;
-  margin-right: 20px;
-  background-color: $bg-green;
-  background-repeat: no-repeat;
-  background-position: 4px center;
+.advantage--leaf {
+  &::before {
+    content: "";
+    background-image: url("../img/advantage-leaf@1x.png");
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    &::before {
+      background-image: url("../img/advantage-leaf@2x.png");
+    }
+  }
 }
 
-.advantage__image--leaf {
-  background-image: url("../img/advantage-leaf@1x.png");
+.advantage--powder {
+  &::before {
+    content: "";
+    background-image: url("../img/advantage-powder@1x.png");
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    &::before {
+      background-image: url("../img/advantage-powder@2x.png");
+    }
+  }
 }
 
-.advantage__image--powder {
-  background-image: url("../img/advantage-powder@1x.png");
+.advantage--dining {
+  &::before {
+    content: "";
+    background-image: url("../img/advantage-dining@1x.png");
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    &::before {
+      background-image: url("../img/advantage-dining@2x.png");
+    }
+  }
 }
 
-.advantage__image--dining {
-  background-image: url("../img/advantage-dining@1x.png");
-}
+.advantage--clock {
+  &::before {
+    content: "";
+    background-image: url("../img/advantage-clock@1x.png");
+  }
 
-.advantage__image--clock {
-  background-image: url("../img/advantage-clock@1x.png");
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    &::before {
+      background-image: url("../img/advantage-clock@2x.png");
+    }
+  }
 }
 
 .advantage__desc {
@@ -45,13 +84,12 @@
   .advantage {
     position: relative;
     display: block;
-  }
 
-  .advantage__image {
-    width: 80px;
-    height: 80px;
-    margin-bottom: 32px;
-    background-position: center;
+    &::before {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 32px;
+    }
   }
 
   .advantage__desc {

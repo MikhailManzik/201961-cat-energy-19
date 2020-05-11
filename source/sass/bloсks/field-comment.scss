@@ -12,6 +12,8 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $color-grey;
+  border: 1px solid $color-light-grey;
+  overflow: hidden;
 
   &:hover {
     border: 1px solid #cdcdcd;

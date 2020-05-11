@@ -11,32 +11,27 @@
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/gift-photo-mobile@2x.jpg");
   }
-}
 
-.bonus__content {
-  text-align: center;
-}
-
-.bonus__icon {
-  margin-top: 65px;
-  margin-bottom: 57px;
-  fill: #ffffff;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 65px;
+    width: 55px;
+    height: 60px;
+    background-image: url("../img/icon-gift.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 .bonus__text {
+  margin: 0;
+  margin-top: 188px;
   margin-bottom: 42px;
   font-family: $arial;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
-}
-
-.bonus__bg {
-  width: 100%;
-}
-
-.bouns__image {
-  width: 100%;
+  text-align: center;
 }
 
 @media (min-width: $tablet-width) {
@@ -48,19 +43,10 @@
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/gift-photo-tablet@2x.jpg");
     }
-  }
 
-  .bonus__content {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-  }
-
-  .bonus__icon {
-    margin: 0;
-    margin-left: 90px;
-    fill: #ffffff;
+    &::before {
+      left: 90px;
+    }
   }
 
   .bonus__text {
@@ -80,20 +66,15 @@
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/gift-photo-desktop@2x.jpg");
     }
-  }
 
-  .bonus__content {
-    display: block;
-  }
-
-  .bonus__icon {
-    margin: 0;
-    margin-top: 65px;
-    margin-bottom: 58px;
+    &::before {
+      left: 98px;
+    }
   }
 
   .bonus__text {
     margin: 0;
+    margin-top: 188px;
     margin-bottom: 42px;
     padding: 0 43px;
     text-align: center;

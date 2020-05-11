@@ -1,16 +1,5 @@
 .main-header {
   position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    top: 54px;
-    width: 100vw;
-    height: 1px;
-    margin-left: -50vw;
-    background-color: #e6e6e6;
-  }
 }
 
 .main-header--bg {

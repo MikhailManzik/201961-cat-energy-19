@@ -1,4 +1,4 @@
-.main-nav-closed {
+.main-nav--closed {
   display: none;
 }
 
@@ -13,16 +13,12 @@
   position: relative;
   display: flex;
   justify-content: center;
+  margin-left: -20px;
+  margin-right: -20px;
+  border-top: 1px solid #e6e6e6;
 
-  &::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    width: 100vw;
-    height: 1px;
-    margin-left: -50vw;
-    background-color: #e6e6e6;
+  &:last-child {
+    border-bottom: 1px solid #e6e6e6;
   }
 }
 
@@ -56,7 +52,7 @@
     margin-left: -25px;
   }
 
-  .main-nav-closed {
+  .main-nav--closed {
     display: flex;
   }
 
@@ -68,7 +64,12 @@
 
   .main-nav__item {
     margin-left: 36px;
-    border-bottom: none;
+    margin-right: 0;
+    border: none;
+
+    &:last-child {
+      border-bottom: none;
+    }
 
     &::after {
       display: none;

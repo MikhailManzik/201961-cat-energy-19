@@ -1,4 +1,4 @@
-.dop-tovar__head {
+.add-product__head {
   margin: 0;
   font-family: $oswald;
   font-size: 16px;
@@ -8,7 +8,7 @@
   color: $color-black;
 }
 
-.dop-tovar__desc {
+.add-product__desc {
   display: flex;
   justify-content: space-between;
   font-family: $arial;
@@ -17,66 +17,66 @@
   color: $color-grey;
 }
 
-.dop-tovar__value {
+.add-product__value {
   margin: 0;
 }
 
-.dop-tovar__order {
+.add-product__order {
   width: auto;
   display: block;
   text-align: center;
 }
 
 @media (min-width: $tablet-width) {
-  .dop-tovar__wrap {
+  .add-product__wrap {
     display: flex;
     align-items: baseline;
     margin-bottom: 5px;
   }
 
-  .dop-tovar__head {
+  .add-product__head {
     font-size: 20px;
     line-height: 20px;
   }
 
-  .dop-tovar__desc {
+  .add-product__desc {
     margin-left: auto;
     font-size: 16px;
     line-height: 20px;
   }
 
-  .dop-tovar__value {
+  .add-product__value {
     margin-left: 52px;
   }
 
-  .dop-tovar__order {
+  .add-product__order {
     font-size: 16px;
     margin-bottom: 11px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .dop-tovar {
+  .add-product {
     display: flex;
     align-items: center;
   }
 
-  .dop-tovar__wrap {
+  .add-product__wrap {
     align-items: baseline;
     width: 70%;
   }
 
-  .dop-tovar__head {
+  .add-product__head {
     width: 50%;
     margin-right: 38px;
   }
 
-  .dop-tovar__desc {
+  .add-product__desc {
     width: 50%;
     margin: 0;
   }
 
-  .dop-tovar__order {
+  .add-product__order {
     width: 25%;
     margin-left: 37px;
     flex-shrink: 0;
