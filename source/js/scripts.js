@@ -2,6 +2,9 @@ var buttonMenu = document.querySelector(".toggle");
 var buttonIcon = document.querySelector(".toggle__icon");
 var siteNavigation = document.querySelector(".main-nav");
 
+buttonMenu.classList.remove("toggle--hidden");
+siteNavigation.classList.add("main-nav--closed");
+
 buttonMenu.addEventListener("click", function () {
   if (buttonIcon.classList.contains("toggle__icon--opened")) {
     buttonIcon.classList.remove("toggle__icon--opened");
